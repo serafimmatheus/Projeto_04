@@ -1,0 +1,662 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html,body{
+    height: 100%;
+}
+
+/*------------------------------------*/
+/*-----ESTILO PARA O PLUGIN SLICK-----*/
+/*------------------------------------*/
+
+.slick-dotted ul{
+    list-style-type: none;
+    text-align: center;
+    position: relative;
+    margin-top: 50px;
+}
+
+.slick-dotted li{
+    display: inline-block;
+    margin: 0 7px;
+}
+
+.slick-dotted button:focus{
+    outline: 0;
+}
+
+.slick-dotted li button{
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    color: #d8d8d8;
+    border-width: 0;
+    background: #d8d8d8 ;
+    opacity: 1;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+li.slick-active button{
+    background: #688292;
+    color: #688292;
+}
+
+.slick-slide:focus{
+    outline: none;
+}
+
+
+
+/*----------------------------*/
+/*-----Classes Auxiliares-----*/
+/*----------------------------*/
+
+.clear{
+    clear: both;
+}
+
+.container{
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+.selected{
+    font-weight: bold;
+}
+
+/*----------------*/
+/*-----HEADER-----*/
+/*----------------*/
+
+header{
+    width: 100%;
+    padding: 30px 0;
+}
+
+header div.logo img{
+    position: relative;
+    left: 30px;
+    float: left;
+    width: 100px;
+    height: 40px;
+}
+
+/*-----NAV DESKTOP-----*/
+nav.desktop ul{
+    float: right;
+    list-style-type: none;
+}
+
+nav.desktop ul li{
+    display: inline-block;
+    margin: 10px 20px;
+}
+
+nav.desktop a{
+    text-decoration: none;
+    color: #b4b4b4;
+}
+
+nav.desktop a:hover{
+    color: grey;
+}
+
+/*-----NAV MOBILE-----*/
+
+div.logo-mobile{
+    position: relative;
+    display: none;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+nav.mobile{
+    display: none;
+    position: relative;
+    left: -10px;
+    width: calc(100% + 20px);
+    background: rgba(0, 0, 0, 0.8);
+}
+
+nav.mobile ul{
+    list-style-type: none;
+}
+
+nav.mobile ul li{
+    border-bottom: 2px solid white;
+    padding: 3px 0;
+}
+
+nav.mobile li a{
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+}
+
+/*-------------------------------*/
+/*-----SECTION mosaico-group-----*/
+/*-------------------------------*/
+
+div.mosaico-single{
+    max-width: 1280px;
+    float: left;
+    width: calc(100% / 6);
+}
+
+div.mosaico-single-img{
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    padding-top: 100%;
+    /* padding-top: 100%; */
+    border: 5px solid rgb(255, 255, 255);
+}
+
+/*-------------------------------------*/
+/*-----SECTION box-single-servicos-----*/
+/*-------------------------------------*/
+
+section.servicos > .container{
+    position: relative;
+    max-width: 800px;
+    display: flex;
+    align-items: center;
+    top: -30px;
+    text-align: center;
+    /* flex-direction: column; */
+}
+
+section.servicos > .container .box-single-servicos:nth-of-type(1){
+    padding: 30px 10px;
+    width: 30%;
+    background: rgb(57, 94, 122);
+}
+
+
+section.servicos > .container .box-single-servicos:nth-of-type(2){
+    padding: 60px 10px;
+    width: 40%;
+    background: rgb(64, 105, 136);
+}
+
+
+section.servicos > .container .box-single-servicos:nth-of-type(3){
+    padding: 30px 10px;
+    width: 30%;
+    background: rgb(57, 94, 122);
+}
+
+section.servicos > .container .box-single-servicos h1{
+    color: white;
+    font-weight: normal;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+section.servicos > .container .box-single-servicos p{
+    color: white;
+    font-weight: normal;
+    margin-top: 8px;
+    font-size: 12px;
+}
+
+section.servicos > .container .box-single-servicos i{
+    color: white;
+    margin-top: 8px;
+}
+
+/*-----------------------*/
+/*-----SECTION SOBRE-----*/
+/*-----------------------*/
+
+section.sobre .box-sobre{
+    display: flex;
+    width: 60%;
+    margin: 20px auto;
+}
+
+.sobre-img{
+    background-image: url(../img/img_perfil.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 500px;
+    margin: 0 auto;
+    border-right: 10px solid white;
+}
+
+.sobre-txt{
+    width: 50%;
+    margin: 0 auto;
+    border-left: 10px solid white;
+}
+
+.sobre-txt p:nth-of-type(1){
+    margin-top: 12px;
+    font-weight: normal;
+    text-align: justify;
+}
+
+.sobre-txt p:nth-of-type(2){
+    font-weight: normal;
+    text-align: justify;
+}
+
+/*-----------------------------*/
+/*-----SECTION DEPOIMENTOS-----*/
+/*-----------------------------*/
+
+section.depoimentos > .container{
+    display: flex;
+}
+
+.depoimento-single{
+    width: calc(100% / 3);
+    height: 300px;
+    background: gray;
+    border: 10px solid white;
+}
+
+.depoimento-single iframe:nth-of-type(1){
+    width: 100%;
+    height: 100%;
+}
+
+.depoimento-single iframe:nth-of-type(2){
+    width: 100%;
+    height: 100%;
+}
+
+.depoimento-single iframe:nth-of-type(3){
+    width: 100%;
+    height: 100%;
+}
+
+/*-----------------------------*/
+/*-----SECTION TRATAMENTOS-----*/
+/*-----------------------------*/
+
+section.tratamentos{
+    background: rgb(241, 236, 236);
+    margin: 100px 0;
+}
+section.tratamentos div.box-tratamento{
+    float: left;
+    width: calc(100% / 3);
+}
+
+.tratamentos h2{
+    font-size: 30px;
+    padding: 50px;
+    text-align: center;
+}
+div.box-single-tratamento{
+    height: auto;
+    border: 10px solid rgb(241, 236, 236);
+}
+
+div.box-single-tratamento p{
+    margin: 20px 0;
+}
+
+
+
+/*---------------------------------*/
+/*-----SECTION DEPOIMENTOS_TWO-----*/
+/*---------------------------------*/
+
+section.depoimentos_two > .container{
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+section.depoimentos_two h2{
+    text-align: center;
+}
+
+div.depoimento_two_single{
+    text-align: center;
+    padding: 40px 0 80px 0;
+}
+
+quote{
+    text-align: center;
+}
+div.img-depoimento img{
+    float: left;
+    position: relative;
+    top: 8px;
+    left: 80px;
+}
+
+div.nome-depoimento-txt{
+    position: relative;
+    top: 16px;
+    left: 8px;
+}
+
+/*-------------------------------*/
+/*-----SECTION REDES-SOCIAIS-----*/
+/*-------------------------------*/
+
+section.redes-sociais > div.chamada-instagram{
+    background: rgb(107, 130, 148);
+    width: 100%;
+    padding: 20px 0;
+}
+
+div.chamada-instagram h2{
+    color: white;
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+div.chamada-instagram p{
+    color: white;
+    text-align: center;
+}
+
+/*-----DIV CHAMADA-IMAGENS-----*/
+
+div.chamada-imagens-img img{
+    width: calc(100% / 9);
+    height: calc(100% / 9);
+    float: left;
+    background: gray;
+    border: 5px solid white;
+}
+
+/*-----DIV CHAMADA-FACEBOOK-----*/
+
+section.redes-sociais > div.chamada-facebook{
+    background: rgb(79, 100, 116);
+    width: 100%;
+    padding: 20px 0;
+}
+
+div.chamada-facebook h2{
+    color: white;
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+div.chamada-facebook p{
+    color: white;
+    text-align: center;
+}
+
+/*-------------------------------*/
+/*-----SECTION CONTATO-FINAL-----*/
+/*-------------------------------*/
+
+section.contato-final{
+    background: rgb(207, 202, 202);
+    padding: 30px 0;
+}
+
+/*-----FORM-----*/
+
+form.form{
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+form.form h2{
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+form.form input[type="text"]{
+    width: 100%;
+    height: 35px;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 2px solid rgb(192, 191, 191);
+}
+
+form.form .form-email{
+    float: left;
+    width: 50%;
+}
+
+form.form .form-email input{
+    width: calc(100% - 5px);
+    height: 35px;
+    padding: 8px;
+    border: 2px solid rgb(192, 191, 191);
+}
+
+form.form .form-telefone{
+    float: right;
+    width: 50%;
+}
+
+form.form .form-telefone input{
+    width: 100%;
+    height: 35px;
+    padding: 8px;
+    border: 2px solid rgb(192, 191, 191);
+}
+
+form.form textarea{
+    width: 100%;
+    height: 150px;
+    padding: 8px;
+    margin-top: 20px;
+    resize: none;
+    border: 2px solid rgb(192, 191, 191);
+}
+
+form.form input[type=submit]{
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    background: rgb(79, 100, 116);
+    border: 0;
+    color: white;
+    margin-top: 10px;
+}
+
+/*-------------------------------*/
+/*-----FOOTER CONTATO-RODAPE-----*/
+/*-------------------------------*/
+
+footer.contato-rodape{
+    width: 100%;
+    padding: 50px 0;
+    background: rgb(107, 130, 148);
+}
+
+div.box-contato-rodape{
+    display: flex;
+    margin-left: 10%;
+}
+
+div.single-contato-rodape{
+    width: calc(100% / 3);
+    color: white;
+}
+
+div.single-contato-rodape p{
+    margin: 10px 0;
+}
+
+/*------------------------------*/
+/*-----FOOTER AUTHOR-RODAPE-----*/
+/*------------------------------*/
+
+footer.author-rodape{
+    background: rgb(79, 100, 116);
+    color: white;
+    padding: 20px 0;
+}
+
+.author-rodape p:nth-of-type(1){
+    float: left;
+}
+
+.author-rodape p:nth-of-type(2){
+    float: right;
+}
+/*------------------------*/
+/*-----MEDIAS SCREENS-----*/
+/*------------------------*/
+
+@media screen and (max-width: 768px){
+    div.chamada-imagens-img img{
+        width: calc(100% / 6);
+        height: calc(100% / 6);
+    }
+
+    div.chamada-imagens-img:nth-of-type(1n+7){
+        display: none;
+    }
+
+    section.sobre > div.container{
+        max-width: 768px;
+    }
+
+    section.sobre .box-sobre {
+        display: block;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 510px){
+
+    /*-----HEADER-----*/
+
+    div.logo a img{
+        display: block;
+    }
+
+    nav.desktop{
+        display: none;
+    }
+
+    div.logo-mobile{
+        display: block;
+        float: right;
+        right: 10px;
+    }
+
+    nav.mobile{
+        display: none;
+        top: 10px;
+        text-align: center;
+    }
+
+    nav.mobile li:hover{
+        background: rgb(39, 38, 38);
+    }
+
+    /*-----SECTION SERVICOS-----*/
+
+    section.servicos > .container{
+        flex-direction: column;
+    }
+
+    section.servicos > .container .box-single-servicos:nth-of-type(1){
+        width: 90%;
+        max-width: 350px;
+    }
+    
+    section.servicos > .container .box-single-servicos:nth-of-type(2){
+        width: 95%;
+        max-width: 400px;
+    }
+    
+    section.servicos > .container .box-single-servicos:nth-of-type(3){
+        width: 90%;
+        max-width: 350px;
+    }
+
+    /*-----SECTION SOBRE*/
+
+    section.sobre .box-sobre{
+        width: 100%;
+        display: inline-block;
+        margin: 20px 0;
+    }
+
+    section.sobre .sobre-img{
+        width: 90%;
+        margin-top: 10px;
+    }
+
+    section.sobre .sobre-txt{
+        margin-top: 10px;
+    }
+
+    section.sobre .sobre-txt{
+        width: 90%;
+        
+    }
+
+    /*-----DEPOIMENTOS-----*/
+    section.depoimentos > .container{
+        flex-direction: column;
+    }
+
+    section.depoimentos .depoimento-single{
+        width: 100%;
+    }
+
+    /*-----SECTION REDES-SOCIAIS-----*/
+
+    div.chamada-imagens-img img{
+        width: calc(100% / 3);
+        height: calc(100% / 3);
+    }
+
+    div.chamada-imagens-img:nth-of-type(1n+4){
+        display: none;
+    }
+    /*-----SECTION CONTATO-RODAPE*/
+    div.box-contato-rodape{
+        width: 100%;
+        margin-left: 0;
+        display: inline-block;
+        text-align: center;
+        margin-top: 0;
+    }
+    
+    div.single-contato-rodape{
+        width: 100%;
+    }
+
+    div.single-contato-rodape:nth-of-type(2){
+        margin: 30px 0;
+    }
+}
+
+@media screen and (max-width: 320px){
+    div.img-depoimento img {
+        position: relative;
+        left: 20px;
+    }
+
+    .author-rodape{
+        text-align: center;
+    }
+    
+    .author-rodape p:nth-of-type(1){
+        float: none;
+        margin-bottom: 10px;
+    }
+    
+    .author-rodape p:nth-of-type(2){
+        float: none;
+    }
+}
+
